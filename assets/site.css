@@ -114,6 +114,26 @@ td { border-top: 1px solid var(--line); padding: 12px 16px; vertical-align: top;
 .stat b { display: block; font-family: var(--serif); font-size: 34px; }
 .stat span { display: block; margin-top: 6px; font-size: 14px; line-height: 1.5; color: var(--ink-2); }
 
+/* Home: program overview */
+.glance { flex: 1 1 340px; min-width: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.glance div { background: #FFFFFF; border: 1px solid #DDE3E9; border-radius: 10px; padding: 18px; }
+.glance b { display: block; font-family: var(--serif); font-size: 32px; line-height: 1.1; }
+.glance span { display: block; margin-top: 6px; font-size: 14px; line-height: 1.45; color: var(--ink-2); }
+.streams { margin-top: 36px; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
+.stream { border: 1px solid var(--line); border-top: 4px solid var(--blue); border-radius: 10px; padding: 26px; display: flex; flex-direction: column; gap: 10px; }
+.stream .num { font-size: 12px; font-weight: 600; letter-spacing: 0.08em; color: var(--blue); }
+.stream h3 { font-size: 23px; line-height: 1.25; }
+.stream .q { margin: 0; font-family: var(--serif); font-size: 17px; line-height: 1.45; font-style: italic; color: var(--ink); }
+.stream p { margin: 0; font-size: 15px; line-height: 1.6; color: var(--ink-2); }
+.stream ul { margin: 4px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 8px; font-size: 15px; font-weight: 600; }
+.stream ul a { text-decoration: none; }
+.stream ul a:hover { text-decoration: underline; }
+.methods { margin-top: 28px; display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 20px; }
+.method h3 { font-family: var(--sans); font-size: 16px; font-weight: 600; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.method p { margin: 6px 0 0; font-size: 14px; line-height: 1.6; color: var(--ink-2); }
+.ladder-row { display: flex; flex-wrap: wrap; gap: 48px; align-items: center; }
+.ladder-row > div:first-child { flex: 999 1 420px; min-width: 0; }
+
 @media (max-width: 720px) {
   .hero { padding-top: 56px; padding-bottom: 56px; gap: 36px; }
   .hero h1 { font-size: 40px; }
